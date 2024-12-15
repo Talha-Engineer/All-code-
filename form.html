@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Enquiry form</legend>
+    <form action="" method="">
+        
+        <label for="">Name</label> <br>
+        <input type="text" pattern="[a-zA-Z ]{8,15}"  placeholder="Enter the name" title="Enter The Valid Name"> <br>
+
+        <label for="">Email</label> <br>
+        <input type="email" pattern="" placeholder="Enter The Email"><br>
+
+        <label for="">Phone</label> <br>
+        <input type="tel" pattern="[0-10]{11}" title="Enter The valid phone number" placeholder="Enter The Phone "><br>
+
+        <label for="">Message</label><br>
+        <textarea name="" id=""></textarea><br>
+
+        <button type="submit">Save</button>
+        <input type="submit" value="Go">
+         <br>
+         <br>
+        <label for="">Gender</label><br>
+        <input type="radio" value="male" name="gender">Male 
+        <input type="radio" value="female" name="gender">feMale <br>
+        <br>
+        <label for="">Checkbox</label> <br>
+        <input type="checkbox" value="">PHP <input type="checkbox" value="LARAVEL">LARAVEL
+        <input type="checkbox" value="">C++ <input type="checkbox" value="C">C <br>
+        
+        <label for="">File</label> <br>
+        <input type="file"><br>
+
+        <label for="">Passward</label><br>
+        <input type="password">
+        
+        <br>
+        <label for="">Country</label><br>
+        <select name="" id="">
+            <option value="">-----Select Country-----</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="UAE">UAE</option>
+            <option value="India">India</option>
+            <option value="Uk">Uk</option>
+            <option value="Japan">Japan</option>
+        </select>
+<br>
+        <label for="">Course</label><br>
+        <select name="" id="">
+            <optgroup label="Fronted">
+                <option value="">Select Course</option>
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JS</option>
+                <option value="">HTML</option>
+            </optgroup>
+        
+        
+        
+            <optgroup label="Backened">
+                <option value="">PHP</option>
+                <option value="">LARAVEL</option>
+                <option value="">mysql</option>
+                <option value="">nodejs</option>
+            </optgroup>
+        </select>
+        <br>
+        QTY <br>
+        <input type="number" min="1" max="20"><br>
+        Date <br>
+        <input type="date"><br>
+        Time <br>
+        <input type="time"><br>
+        Month <br>
+        <input type="month"><br>
+        week <br>
+        <input type="week"><br>
+        Color <br>
+        <input type="color"><br>
+        Name <br>
+        <input type="text" required minlength="5" maxlength="15"><br>
+        URL <br>
+        <input type="url"><br>
+        Range <br>
+        <input type="range"><br>
+
+        <input type="reset" value="reset"><br>
+        <button type="reset">reset</button><br>
+
+    </form>
+</fieldset>
+</body>
+</html>

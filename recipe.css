@@ -1,0 +1,80 @@
+/* Body styling */
+body {
+    background-color: #FFFFFF;
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading styling */
+h1, h2 {
+    background-color: #F0F0F0;
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+/* Link styling */
+a {
+    color: #A4A400;
+}
+
+/* Tooltip styling for Ingredients */
+span[title] {
+    text-decoration: underline;
+    cursor: help;
+}
+
+/* Styling for Unordered Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients ul li,
+.directions ol li {
+    margin-bottom: 8px;
+}
+
+/* Styling for Ordered Lists */
+ol {
+    margin-left: 20px;
+}
+
+/* Blockquote styling in User Comments */
+.user-comments blockquote {
+    background-color: #fffbcc;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.quote-author {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Preformatted Text for Footer */
+.footer, pre {
+    font-family: monospace;
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+}

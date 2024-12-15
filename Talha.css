@@ -1,0 +1,79 @@
+body{
+    background-color: aqua;
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+header{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.About-me{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+ .Container{
+    margin-top: 10px;
+    /* text-align: center; */
+    
+ }
+
+ .Box1{
+    width: 300px;
+    height:400px;
+    background-color: aliceblue;
+    float: left;
+    margin-left: 30px;
+    margin: 65px;
+    margin-top: 20px;
+    border-radius:10px;
+    padding:5px;
+    text-align: center;
+    /* box-shadow: 4px 4px 4px 4px red; */
+    
+ }
+ .Box2{
+    width: 300px;
+    height:400px;
+    background-color: aliceblue;
+    float: left;
+    margin-left: 30px;
+    margin: 65px;
+    margin-top: 20px;
+    border-radius:10px;
+    padding:5px;
+    text-align: center;
+    /* box-shadow: 4px 4px 4px 4px red; */
+    
+ }
+ .Box3{
+    width: 300px;
+    height:400px;
+    background-color: aliceblue;
+    float: left;
+    margin-left: 30px;
+    margin: 65px;
+    margin-top: 20px;
+    border-radius:10px;
+    padding:5px;
+    text-align: center;
+    /* box-shadow: 4px 4px 4px 4px red; */
+    
+ }
+ form{
+    margin-top: 30px;
+    margin-left:20px;
+    
+  }
+  button{
+    width:150px;
+    height:30px;
+  }
+ footer{
+    text-align: center;
+    margin-top: 10px;
+ }

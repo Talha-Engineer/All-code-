@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Student registration form.css">
+</head>
+<body>
+    <section class="container">
+        <header>Student Registration Form</header>
+        <form action="#" class="form">
+            <!-- 1. Full Name -->
+            <div class="input-box">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name" required>
+            </div>
+
+            <!-- 2. Email Address -->
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+            </div>
+
+            <!-- 3. Phone Number -->
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <!-- 4. Date of Birth -->
+            <div class="input-box">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <!-- 5. Gender -->
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="other" name="gender" value="Other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Address -->
+            <div class="input-box">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" placeholder="Enter street address" required>
+            </div>
+
+            <!-- 7. Address Line 2 -->
+            <div class="input-box">
+                <input type="text" placeholder="Enter street address line 2">
+            </div>
+
+            <!-- 8. City -->
+            <div class="input-box">
+                <input type="text" placeholder="Enter your city" required>
+            </div>
+
+            <!-- 9. Region/State -->
+            <div class="input-box">
+                <input type="text" placeholder="Enter your region/state" required>
+            </div>
+
+            <!-- 10. Postal Code -->
+            <div class="input-box">
+                <input type="text" placeholder="Enter postal code" required>
+            </div>
+
+            <!-- 11. Country -->
+            <div class="input-box">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="IN">India</option>
+                    <option value="UK">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- 12. Nationality -->
+            <div class="input-box">
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" placeholder="Enter your nationality" required>
+            </div>
+
+            <!-- 13. Student ID -->
+            <div class="input-box">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="Enter student ID" required>
+            </div>
+
+            <!-- 14. Program of Study -->
+            <div class="input-box">
+                <label for="program">Program of Study</label>
+                <input type="text" id="program" placeholder="Enter program of study" required>
+            </div>
+
+            <!-- 15. Year of Study -->
+            <div class="input-box">
+                <label for="year">Year of Study</label>
+                <select id="year" required>
+                    <option value="" disabled selected>Select your year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+            </div>
+
+            <!-- 16. Enrollment Date -->
+            <div class="input-box">
+                <label for="enrollment-date">Enrollment Date</label>
+                <input type="date" id="enrollment-date" required>
+            </div>
+
+            <!-- 17. GPA -->
+            <div class="input-box">
+                <label for="gpa">GPA</label>
+                <input type="number" id="gpa" placeholder="Enter GPA" step="0.01" min="0" max="4" required>
+            </div>
+
+            <!-- 18. Guardian's Name -->
+            <div class="input-box">
+                <label for="guardian-name">Guardian's Name</label>
+                <input type="text" id="guardian-name" placeholder="Enter guardian's name" required>
+            </div>
+
+            <!-- 19. Guardian's Phone Number -->
+            <div class="input-box">
+                <label for="guardian-phone">Guardian's Phone Number</label>
+                <input type="tel" id="guardian-phone" placeholder="Enter guardian's phone number" required>
+            </div>
+
+            <!-- 20. Emergency Contact Name -->
+            <div class="input-box">
+                <label for="emergency-contact">Emergency Contact Name</label>
+                <input type="text" id="emergency-contact" placeholder="Enter emergency contact name" required>
+            </div>
+
+            <!-- 21. Emergency Contact Phone -->
+            <div class="input-box">
+                <label for="emergency-phone">Emergency Contact Phone</label>
+                <input type="tel" id="emergency-phone" placeholder="Enter emergency contact phone" required>
+            </div>
+
+            <!-- 22. Allergies (if any) -->
+            <div class="input-box">
+                <label for="allergies">Allergies (if any)</label>
+                <input type="text" id="allergies" placeholder="Specify allergies (if any)">
+            </div>
+
+            <!-- 23. Additional Notes -->
+            <div class="input-box">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" placeholder="Enter any additional information" rows="3"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

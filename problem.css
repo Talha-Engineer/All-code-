@@ -1,0 +1,42 @@
+header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+   
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.left{
+    border: 1px solid black;
+    
+    height:600px;
+    width: 20%;
+}
+.main-center{
+    border: 1px solid black;
+
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+        border: 1px solid black;
+       
+        width: 100%;
+    }
+.banner{
+    border: 1px solid black;
+  
+    width: 100%;
+}
+.right{
+    border: 1px solid black;
+
+    width: 20%;
+}
+
+

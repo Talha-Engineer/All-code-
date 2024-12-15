@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">My Portfolio</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1>Talha Niamat</h1>
+        <img src="Talhapic.jpeg" alt="Talha Niamat" width="200px">
+        <p>Hi, I am Talha Niamat.I am a Student of Software engineering in University of lahore.</p>
+    </header>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            My name is Talha Niamat, a passionate Software Engineering student at the University of Lahore. I have a deep interest in web development, e-commerce, and artificial intelligence. I enjoy exploring innovative technologies that can help solve real-world problems. In my free time, I love working on personal coding projects, designing user-friendly websites, and learning about the latest trends in the tech industry. Aside from technology, I am also fascinated by history and enjoy learning about ancient civilizations.
+        </p>
+    </section>
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        
+        <div class="project">
+            <img src="Talhapic.jpeg" alt="Project 1" width="300px">
+            <h3>E-commerce Website</h3>
+            <p>This project involved developing a fully functional e-commerce website using HTML, CSS, and JavaScript. The website includes product pages, a shopping cart, and a secure checkout system. I implemented responsive design principles to ensure it works well on mobile devices.</p>
+        </div>
+        
+        <div class="project">
+            <img src="Talhapic.jpeg" alt="Project 2" width="300px">
+            <h3>Portfolio Website</h3>
+            <p>This personal portfolio website was built to showcase my skills and projects. I used HTML, CSS, and some JavaScript to create an interactive and user-friendly experience. The design is fully responsive and optimized for different screen sizes.</p>
+        </div>
+        
+        <div class="project">
+            <img src="Talhapic.jpeg" alt="Project 3" width="300px">
+            <h3>Machine Learning Model</h3>
+            <p>In this project, I developed a machine learning model to predict customer churn using Python and scikit-learn. The model achieved an accuracy of 85% on the test data. I also created data visualizations to interpret the results effectively.</p>
+        </div>
+    </section>
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Phone -->
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+    
+            <!-- Hobbies -->
+            <label for="hobbies">Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label>
+    
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label>
+    
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+    
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label>
+            </div>
+    
+            <!-- Address -->
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+    
+            <!-- Country -->
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+    
+            <!-- City -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+    
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-profile" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/your-profile" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        
+        <p>&copy; 2024 Talha Niamat. All rights reserved.</p>
+    </footer>
+    
+
+</body>
+</html>
+
+
+
+
+
+/* Header Styles */
+header {
+    background-color: #f4f4f4; /* Light background for the header */
+    text-align: center; /* Center text and image */
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center navigation links */
+    background-color: #333; /* Dark background for nav */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between list items */
+}
+
+nav ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    padding: 10px 15px; /* Padding around links */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Name and Image */
+h1 {
+    font-size: 36px; /* Larger font for the name */
+    margin: 20px 0; /* Spacing around the name */
+    color: #333; /* Dark color for the name */
+}
+
+img {
+    border-radius: 50%; /* Circular image */
+    margin: 10px 0; /* Spacing around the image */
+}
+
+p {
+    font-size: 18px;
+    color: #666; /* Lighter color for the paragraph */
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller font for mobile */
+    }
+
+    img {
+        width: 200px; /* Smaller image on mobile */
+    }
+}
+/* About Me Section */
+#about-me {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px 20px; /* Spacing inside the section */
+    text-align: center; /* Center text */
+}
+
+#about-me h2 {
+    font-size: 28px; /* Heading size */
+    color: #333; /* Dark color for heading */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+#about-me p {
+    font-size: 18px; /* Paragraph font size */
+    color: #666; /* Lighter color for the text */
+    line-height: 1.6; /* Line spacing for better readability */
+    max-width: 800px; /* Limit paragraph width */
+    margin: 0 auto; /* Center the paragraph horizontally */
+}
+/* Portfolio Section */
+#portfolio {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 40px; /* Space between projects */
+    max-width: 800px; /* Limit width of project container */
+    margin: 0 auto; /* Center the projects */
+    text-align: left; /* Align project text to the left */
+}
+
+.project img {
+    float: left; /* Align the image to the left of the text */
+    margin-right: 20px; /* Add space between the image and text */
+    border-radius: 5px; /* Optional: Rounded corners for the image */
+}
+
+.project h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    overflow: hidden; /* Ensures proper flow of text around the image */
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .project img {
+        float: none; /* Removes floating on smaller screens */
+        display: block;
+        margin: 0 auto 20px; /* Center the image on mobile */
+    }
+
+    .project {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+/* Contact Me Section */
+#contact-me {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact-me h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    #contact-me {
+        padding: 20px;
+    }
+}
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .social-media {
+    margin-bottom: 15px;
+}
+
+footer .social-media a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #f4b400; /* Change color on hover */
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    footer .social-media a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}

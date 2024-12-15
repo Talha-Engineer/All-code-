@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="web.css">
+    <!-- <script type="text/javascript" src="web.js"></script> -->
+    
+</head>
+<body>
+    <h2>Medical Billing System</h2>
+    <table align="center" >
+        <tr class="theading">
+        <th>Sr.No</th>
+        <th>Item</th>
+        <th>Unit cost</th>
+        <th>Quantity</th>
+        <th>Cost(R.s)</th>
+    </tr>
+
+        <tr>
+            <td>1</td>
+            <td><h4>Erithromycin 100 mg</h4></td>
+            <td id="ep">58</td>
+            <td><input type="number"  id="name"></td>
+            <td><input type="search"  id="resulte" readonly></td>
+            <script>
+                function cal(){
+    var EP = document.getElementById("ep").textContent;
+    var EQ = document.getElementById("name").value;
+    if(EQ)
+    {
+        var E_Price = EP * EQ;
+        document.getElementById("resulte").value=E_Price;
+    }
+    else{
+        document.getElementById("resulte").value='';
+    }
+}
+  cal ( );
+  </script>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><h4>Femramycin 500 mg</h4></td>
+            <td id="fp">46</td>
+            <td><input type="number" name="" id="numf"></td> 
+            <td><input type="search" name="" id="resultf" readonly></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><h4>Oximycin 2 mg</h4></td>
+            <td id="op">1090</td>
+            <td><input type="number" name="" id="numo"></td>
+            <td><input type="search" name="" id="resulto" readonly></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td>Total</td>
+            <td><input type="search" name="" id="total"></td>
+        </tr>
+
+        <tr>
+             <td colspan="3"></td>
+             
+            <td>GST at 15%</td>
+            <td><input type="search" name="" id="gst"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td>Grand Total Rs.</td>
+            <td><input type="search" name="" id="gtotal"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td><button onclick="cal( )"><b>Update Grand Total</b></button></td>
+        </tr>
+
+    </table>
+
+
+    
+</body>
+</html>
